@@ -1,9 +1,9 @@
-main() {
+main() { //sempre procura o main
   print('Teste');
 
   dynamic x = 'Teste'; //can take any type
   x = 123;
-  x - false;
+  x = false;
 
   int a = 3;
   double b = 3.1;
