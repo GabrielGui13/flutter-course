@@ -1,3 +1,5 @@
+import './pessoa.dart';
+
 int soma(int a, int b) { //sem tipos, fica dynamic
   return a + b;
 }
@@ -40,4 +42,9 @@ main() {
   // print('O produto ${p2.nome} tem preco R\$${p2.preco}');
   imprimirProduto(1 ,nome: p1.nome, preco: p1.preco);
   imprimirProduto(2 ,nome: p2.nome, preco: p2.preco);
+
+  var pessoa = new Pessoa();
+  pessoa.nome = 'Gabriel';
+  //pessoa._cpf = '123.456.789-00' => nao visivel
+  pessoa.cpf = '123.456.789-00';
 }
